@@ -4,7 +4,7 @@
 
   :root {
     --background-blur: blur(16px);
-    --light-grey: #bbbbbb;
+    --light-blue: #30b3ff;
     --dark-grey: #111111;
     --transparent-white: rgba(255,255,255,0.8);
   }
@@ -15,22 +15,59 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
     line-height: 1.5;
-    background-color: var(--dark-grey);
     color: white;
   }
+
+  #about-me {
+    padding: 150px 300px;
+  }
+
+  #about-me h2 {
+    justify-content: flex-start;
+    padding-right: 10px;
+  }
+
+  .white-border {
+    border-right: 2px solid white;
+    justify-content: flex-start;
+  }
+
+  #about-me div {
+    width: 50%;
+    align-items: flex-start;
+  }
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
   
+  /* Grid CSS */
+  #about-grid {
+    margin: 0px 6%;
+    display: grid;
+    width: 25%;
+    min-height: 300px;
+  }
+
   h1,
   h2,
   h3,
   h4,
   h5,
   h6 {
-    margin: 0;
+    margin: 10px;
   }
   
-  p {
-    margin: 0;
-  }
+  /* p {
+    margin-bottom: 10px;
+  } */
 
   /* Navigation CSS */
   header {
@@ -69,20 +106,19 @@
   }
 
   #navigation a:hover {
-    color: var(--light-grey);
+    color: var(--light-blue);
   }
 
   .page-wrapper {
-    background: url("../images/IMG_5845.jpeg")rgba(0, 0, 0, 0.5);
-    background-blend-mode: multiply;
-    margin: 80px auto;
-    height: 300px;
+    background: url("../images/IMG_5845.jpeg");
+    margin: 0 auto;
+    height: 100vh;
   }
 
   .background {
     background-position: top;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
   }
 
   #sub-heading {
