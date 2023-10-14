@@ -10,42 +10,50 @@
 </head>
 
 <body>
+    <div class="page-wrapper background">
   <!-- main logo / nav -->
   <header>
-        <nav id="nav-bar">
+        <nav id="nav-bar" class="flex-row">
             <h1>JEM<span class="lawton">LAWTON</span></h1>
-            <div id="navigation">
-              <p><a href="#about-me">ABOUT ME</a></p>
-              <p><a href="#work">WORK</a></p>
-              <p><a href="#contact-me">CONTACT ME</a></p>
-              <p><a href="#resume">RESUME</a></p>
-            </div>
+            <ul id="navigation" class="flex-row justify-end">
+                <li><a href="#about-me">ABOUT ME</a></li>
+                <li><a href="#work">WORK</a></li>
+                <li><a href="#contact-me">CONTACT ME</a></li>
+                <li><a href="#resume">CV</a></li> 
+            </ul>
     </nav>
   </header>
-
-  <!-- hero banner -->
-  <section class="hero-banner background">
-    <div id="sub-heading">
-      <h2>Cool subtitle here!</h2>
-    </div>
-  </section>
-
-  <main class="page-wrapper">
+  <main class="content-wrapper">
     <!-- about me -->
-    <section class="page-section" id="about">
-      <h2>About Me</h2>
-    </section>
+    <section class="flex-row">
+        <article id="about-me" class="flex-row">
+          <h2>About Me</h2>
+          <div class="side-accent"></div>
+          <div id="about-me-column" class="flex-column">
+          <figure>
+            <img id="profile-img" src="./assets/images/F7DFA47C-9941-48E3-88CC-FBF0F6D4FB1A.jpg" alt="A profile picture of me">
+          </figure>
+                <p>Cliche iceland etsy, crucifix taiyaki DSA next level meh disrupt beard waistcoat neutra gorpcore. Offal bespoke gluten-free, fit seitan celiac yuccie vice meggings VHS humblebrag tousled yr. IPhone vice seitan tacos polaroid. Hell of pickled affogato, tbh franzen meditation yr.</p>
+          <p>Chillwave ascot man bun pok pok yes plz live-edge hot chicken vinyl blackbird spyplane occupy woke farm-to-table vape umami health goth. Banh mi blackbird spyplane thundercats twee taxidermy lumbersexual. Tonx gochujang fanny pack street art, +1 franzen you probably haven't heard of them poutine food truck yuccie knausgaard Brooklyn skateboard adaptogen. Butcher dreamcatcher sus blackbird spyplane.</p>
+        </div>
+        </article>
+        <div id="sub-heading" class="flex-column align-end">
+            <h2>Portfolio</h2>
+        </div>
+        </section>
 
     <!-- portfolio container -->
-    <section class="page-section" id="work">
+    <section id="work-grid">
       <h2>Work</h2>
     </section>
 
     <!-- contact -->
-    <section class="page-section contact" id="contact">
+    <section id="contact-grid">
       <h2>Contact Me</h2>
     </section>
+</div>
   </main>
+</div>
 </body>
 
 </html>

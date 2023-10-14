@@ -4,9 +4,10 @@
 
   :root {
     --background-blur: blur(16px);
-    --light-grey: #bbbbbb;
+    --light-grey: #b5b5b5;
     --dark-grey: #111111;
-    --transparent-white: rgba(255,255,255,0.8);
+    --transparent-white: rgba(255,255,255,0.05);
+    --transparent-black: rgba(0,0,0,0.2);
   }
 
   
@@ -15,10 +16,50 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
     line-height: 1.5;
-    background-color: var(--dark-grey);
     color: white;
   }
+
+  #about-me {
+    margin: 0 0 0 80px;
+    max-width: 700px;
+  }
+
+  #about-me h2 {
+    text-align: right;
+    margin-top: -10px;
+  }
+
+  #about-me figure {
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+  }
+
+  #about-me-column {
+    justify-content: flex-start;
+  }
+
+  .side-accent {
+    width: 8px;
+    background-color: white;
+    margin-left: 15px;
+    margin-right: 30px;
+  }
+
+  #profile-img {
+    width: 6.5rem;
+    clip-path: circle(70px at center);
+  }
+
   
+  /* Grid CSS */
+  #about-grid {
+    margin: 0px 6%;
+    display: grid;
+    width: 25%;
+    min-height: 300px;
+  }
+
   h1,
   h2,
   h3,
@@ -29,7 +70,7 @@
   }
   
   p {
-    margin: 0;
+    margin-top: 0;
   }
 
   /* Navigation CSS */
@@ -37,16 +78,16 @@
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 10;
+    z-index: 100;
   }
 
   #nav-bar {
-    display: flex;
-    flex-direction: row;
     height: 60px;
+    width: 100%;
     margin: 12px auto;
     backdrop-filter: var(--background-blur);
-    padding-left: 20px;
+    background: var(--transparent-white);
+    padding-left: 30px;
     padding-right: 60px;
     align-items: center;
   }
@@ -56,9 +97,7 @@
   }
 
   #navigation {
-    display: flex;
     width: 100%;
-    justify-content: flex-end;
   }
 
   #navigation a {
@@ -68,34 +107,71 @@
     font-size: 15px;
   }
 
+  #navigation li {
+    list-style-type: none;
+  }
+
   #navigation a:hover {
     color: var(--light-grey);
   }
 
   .page-wrapper {
-    background: url("../images/IMG_5845.jpeg")rgba(0, 0, 0, 0.5);
+    background: url("../images/IMG_5845\ \(1\).jpeg")rgb(0 0 0 / 80%);
+    background-attachment: fixed;
     background-blend-mode: multiply;
-    margin: 80px auto;
-    height: 300px;
+    height: 100vh;
+    padding-top: 85px;
   }
 
   .background {
     background-position: top;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
+  }
+
+  .content-wrapper {
+    background: var(--transparent-white);
+    padding-top: 50px;
   }
 
   #sub-heading {
-    background-color: var(--transparent-white);
-    position: absolute;
-    right: 100px;
-    top: 210px;
-    padding: 5px 15px;
-    max-width: 550px;
-    z-index: 100;
+    width: 100%;
+}
+
+  #sub-heading h2 {
+    padding: 0px 190px 0px 0px;
+    border-bottom: solid white 2px;
+  
+  }
+
+  .justify-end {
+    justify-content: flex-end;
+  }
+
+  .align-end {
+    align-items: flex-end;
+  }
+
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .flex-column {
+    display: flex;
+    flex-direction: column;
   }
 
   /* Typography CSS */
   .lawton {
+    font-weight: lighter;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 16px;
     font-weight: lighter;
   }
