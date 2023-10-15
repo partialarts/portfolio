@@ -7,7 +7,7 @@
     --light-grey: #b5b5b5;
     --dark-grey: #111111;
     --transparent-white: rgba(255,255,255,0.05);
-    --transparent-black: rgba(0,0,0,0.2);
+    --transparent-black: rgba(0,0,0,0.5);
   }
 
   
@@ -30,13 +30,14 @@
 
 #about-me .side-accent {
   margin-bottom: 17px;
-  margin-right: 20px;
+  /* margin-right: 20px; */
 }
 
   .side-accent {
     width: 2px;
     background-color: white;
     margin-left: 10px;
+    margin-right: 20px;
   }
 
   #profile-img {
@@ -48,9 +49,9 @@
   /* Grid CSS */
   #work {
     display: grid;
-    margin-right: 55px;
-    grid-template-rows: 150px 150px 150px 150px;
-    grid-template-columns: 18% 41% 41%;
+    margin-right: 70px;
+    grid-template-rows: 175px 175px 175px 175px;
+    grid-template-columns: 115px 42% 42%;
     grid-template-areas: 
     "work project1 project1"
     "work project1 project1"
@@ -59,54 +60,87 @@
     ;
   }
 
-  #work-heading {
-    grid-area: work;
+  .workGridArea {
+    cursor: pointer;
+    display: grid;
+    align-items: end;
+    margin: 10px;
   }
 
-  #work-heading h2 {
-    width: 84.81px
+  #work-heading {
+    grid-area: work;
+    justify-content: end;
   }
 
   #project1 {
     grid-area: project1;
     background-image: url("../images/code-refactor.jpg");
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   #project2 {
     grid-area: project2;
+    background-image: url("../images/Pre-work-study-guide.png");
+    margin-left: 0px;
   }
 
   #project3 {
     grid-area: project3;
+    background-image: url("../images/student-bio-page.png");
+    margin-right: 0px;
   }
 
   #project4 {
     grid-area: project4;
+    background-image: url("../images/02-portfolio-1.jpg");
+    margin-bottom: 0px;
+    margin-left: 0px;
   }
 
   #project5 {
     grid-area: project5;
+    background-image: url("../images/02-portfolio-3.jpg");
+    margin-bottom: 0px;
+    margin-right: 0px;
   }
 
-  .workGridArea {
-    margin: 0px 5px 5px 5px;
-    cursor: pointer;
-    display: grid;
-    align-content: end;
-    background-position: top;
+  .project-heading {
+    background: var(--transparent-black);
+    backdrop-filter: var(--background-blur);
+    padding: 6px 6px 6px 8px;
   }
 
-  h1,
+    .project-heading h3 {
+      margin: 0;
+      font-size: 15px;
+    }
+
+    .project-heading h4 {
+      margin: 0;
+      font-size: 13px;
+    }
+
+    /* font-weight: lighter; */
+    /* width:fit-content */
+  
+
+  /* h1,
   h2,
   h3,
   h4,
   h5,
   h6 {
     margin: 0;
-  }
+  } */
 
   p {
     margin-top: 0;
+  }
+
+  li {
+    list-style-type: none;
   }
 
   /* Navigation CSS */
@@ -131,32 +165,42 @@
   }
 
   #nav-bar a {
-    text-decoration: none;
     padding-right: 70px;
+    font-size: 15px;
+  }
+
+  a {
+    text-decoration: none;
     color: white;
+  }
+
+  a:hover {
+    color: var(--light-grey);
+  }
+
+
+  #contact-me a {
+    font-size: 15px;
+  }
+
+  #contact-me ul {
+    padding-left: 20px;
+    margin-right: 85px;
     font-size: 15px;
   }
 
 
-  #nav-bar li {
-    list-style-type: none;
-  }
-
-  #nav-bar a:hover {
-    color: var(--light-grey);
-  }
-
-  .page-wrapper {
+  .page-background {
     background: url("../images/IMG_5845\ \(1\).jpeg")rgb(222 172 139 / 80%);
     background-attachment: fixed;
-    background-position: center;
     background-blend-mode: multiply;
     padding-top: 76px;
   }
 
   .background {
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
+    background-position: top;
   }
 
   .main-wrapper {
@@ -184,12 +228,20 @@
   
   }
 
+  /* .section-heading {
+    width: 124.8px;
+  } */
+
   .section-margin {
-    margin-left: 40px;
+    margin-left: 30px;
     }
 
   .justify-start {
     align-items: flex-start;
+}
+
+  .justify-between {
+    justify-content: space-between;
 }
 
   .justify-end {
