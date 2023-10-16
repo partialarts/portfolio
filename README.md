@@ -26,6 +26,9 @@ To see the code, open the DevTools by pressing Command+Option+I (macOS) or Contr
 
 ## Credits
 
+- Placeholder images in work section were provided in the starter code
+- All other images, such as the background, are my own.
+
 ### External Tutorials and Resources
 
 * [Stack Overflow - How to Make a Background Blur in CSS?](https://www.scaler.com/topics/background-blur-css/) – Used for backdrop-filter in CSS
