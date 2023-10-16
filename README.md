@@ -12,7 +12,7 @@ This inevitably threw up some additional coding challenges, especially with rega
 
 ## Deployed Application
 
-* [Code Refactor Challenge on GitHub Pages](https://partialarts.github.io/week1-refactor-challenge/)
+* [Portfolio on GitHub Pages](https://partialarts.github.io/portfolio/)
 
 ## Usage
 
