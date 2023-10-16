@@ -16,24 +16,28 @@ This inevitably threw up some additional coding challenges, especially with rega
 
 ## Usage
 
-To use this web page, you can open index.html inside a browser. To see the refactored code, open the DevTools by pressing Command+Option+I (macOS) or Control+Shift+I (Windows). A console panel should open either below or to the side of the webpage in the browser. There you will see the refactored HTML and CSS code along with comments.
+To use this web page, you can open index.html inside a browser. The navigation links will link to the relevant sections of the page. Clicking on the work grid items will open a new window with a link to the relevant project.
+
+To see the code, open the DevTools by pressing Command+Option+I (macOS) or Control+Shift+I (Windows). A console panel should open either below or to the side of the webpage in the browser. There you will see the HTML and CSS code along with comments.
 
 ## Screenshot
 
-![The Horiseon webpage includes a navigation bar, a header image, and cards with text and images at the bottom of the page.](assets/images/screenshot.png)
+![The portfolio includes a navigation bar, a bio, and work with titles and images as well as a contact section at the bottom of the page.](assets/images/screenshot.png)
 
 ## Credits
-### External Tutorials and Resources
-* [Semantic HTML](https://www.w3schools.com/html/html5_semantic_elements.asp)
-* [HTML Accessibility](https://www.w3schools.com/html/html_accessibility.asp)
-* [Image `alt` attributes](https://www.w3schools.com/tags/att_img_alt.asp)
-* [Making background images accessible - Stack Overflow answer](https://stackoverflow.com/questions/48913759/how-to-add-alt-text-to-background-images-making-background-images-accessible/#48913760) - Used .sr-only selector in CSS file to visually hide screen-readable version of image
-* [Using Using ARIA landmarks to identify regions of a page](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA11)
-* [DEV 1.10 – Provide native HTML 5 for elements and ARIA for landmarks](https://universaldesign.ie/technology-ict/web-accessibility-techniques1/developer-s-introduction-and-index/dev-1-provide-an-accessible-page-structure-and-layout/dev-1-10-%E2%80%93-provide-native-html-5-for-elements-and-aria-for-landmarks/)
-* [Using HTML5 section element](https://www.w3.org/WAI/GL/wiki/Using_HTML5_section_element)
-* [CSS Selector Reference](https://www.w3schools.com/cssref/css_selectors.php)
 
+### External Tutorials and Resources
+
+* [Stack Overflow - How to Make a Background Blur in CSS?](https://www.scaler.com/topics/background-blur-css/) – Used for backdrop-filter in CSS
+* [CSS Variables - The var() Function](https://www.w3schools.com/css/css3_variables.asp)
+* [Stack Overflow - How to "z-index" to make a menu always on top of the content](https://stackoverflow.com/questions/10507143/how-to-z-index-to-make-a-menu-always-on-top-of-the-content)
+* [Stack Overflow - How to add a color overlay to a background image?](https://stackoverflow.com/questions/36679649/how-to-add-a-color-overlay-to-a-background-image) - Used to add colour overlay to page background
+* [Creating Fixed Headers with CSS](https://cssdeck.com/blog/creating-fixed-headers-with-css/) - Used for navigation
+* [CSS background-attachment Property](https://www.w3schools.com/cssref/pr_background-attachment.php) - Used to fix page background
+* [Profile Card Flexbox Tutorial](https://codepen.io/angeladelise/pen/XWmBQoK?editors=1100) - Used to clip profile image with circle
+* [A Complete Guide to CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+* [Media Queries Demystified: CSS Min-Width and Max-Width](https://www.emailonacid.com/blog/article/email-development/emailology_media_queries_demystified_min-width_and_max-width/)
 
 ## License
 
-MIT - [See LICENSE file in repo](https://github.com/partialarts/week1-refactor-challenge/blob/main/LICENSE)
+MIT - [See LICENSE file in repo](https://github.com/partialarts/portfolio/blob/main/LICENSE)
