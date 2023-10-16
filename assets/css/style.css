@@ -121,7 +121,7 @@ figure {
 
 #work {
   display: grid;
-  margin-right: 50px;
+  margin-right: 60px;
   grid-template-rows: 175px 175px 175px 175px;
   grid-template-columns: 115px 43% 43%;
   row-gap: 20px;
@@ -315,7 +315,7 @@ li {
   #work {
   /* Resize work grid */
     display: grid;
-    margin-right: 30px;
+    margin-right: 10px;
     grid-template-rows: 175px 175px 175px 175px 175px 175px;
     grid-template-columns: 115px 1fr;
     grid-template-areas: 
