@@ -9,6 +9,8 @@
 
 :root {
   --background-blur: blur(16px);
+  --light-grey: rgb(200, 170, 150);
+  /* --light-grey: #b5b5b5; */
   --transparent-white: rgba(255,255,255,0.05);
   --transparent-black: rgba(0,0,0,0.5);
 }
@@ -122,13 +124,14 @@ figure {
 }
 
 
-/* Work Section Grid CSS */
+/* Work Section - Grid CSS */
 
 #work {
   display: grid;
   margin-right: 70px;
   grid-template-rows: 175px 175px 175px 175px;
-  grid-template-columns: 115px 42% 42%;
+  grid-template-columns: 115px 43% 43%;
+  row-gap: 20px;
   grid-template-areas: 
   "work project1 project1"
   "work project1 project1"
@@ -137,57 +140,57 @@ figure {
   ;
 }
 
-.workGridArea {
-  cursor: pointer;
-  display: grid;
-  align-items: end;
-  margin: 10px;
-}
-
 #work-heading {
   grid-area: work;
   justify-content: end;
 }
 
+.workGridArea {
+  display: grid;
+  margin-right: 20px;
+  align-items: end;
+}
+
+.workGridArea a {
+  display: grid;
+  height: 100%;
+  align-items: end;
+}
+
+.workGridArea a:hover {
+  background: var(--transparent-black);
+  color: white;
+}
+
 .project1 {
   grid-area: project1;
   background-image: url("../images/code-refactor.jpg");
-  margin-top: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
 }
 
 .project2 {
   grid-area: project2;
   background-image: url("../images/Pre-work-study-guide.png");
-  margin-left: 0px;
 }
 
 .project3 {
   grid-area: project3;
   background-image: url("../images/student-bio-page.png");
-  margin-right: 0px;
 }
 
 .project4 {
   grid-area: project4;
   background-image: url("../images/02-portfolio-1.jpg");
-  margin-bottom: 0px;
-  margin-left: 0px;
 }
 
 .project5 {
   grid-area: project5;
   background-image: url("../images/02-portfolio-2.jpg");
-  margin-bottom: 0px;
-  margin-right: 0px;
 }
 
 .project-heading {
   background: var(--transparent-black);
   backdrop-filter: var(--background-blur);
   padding: 6px 6px 6px 8px;
-  z-index: 100;
 }
 
 .project-heading h3 {
@@ -318,12 +321,6 @@ li {
     "work project5"
     ;
   }
-  #project1, #project2, #project3, #project4 {
-    margin: 0px 0px 20px 0px;
-  }
-  #project5 {
-    margin: 0px 0px 0px 0px;
-}
 }
 
 @media only screen and (max-width: 780px) {
