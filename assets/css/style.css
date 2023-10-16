@@ -12,17 +12,18 @@
   --light-grey: rgb(200, 170, 150);
   --transparent-white: rgba(255,255,255,0.05);
   --transparent-black: rgba(0,0,0,0.5);
+  --white: rgb(250, 250, 250);
 }
 
 
-/* Body Selector */
+/* Body CSS */
 
 body {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
   line-height: 1.5;
-  color: white;
+  color: var(--white)
 }
 
 
@@ -53,7 +54,6 @@ body {
 
 header {
   position: fixed;
-  width: 100%;
   top: 0;
   z-index: 100;
 }
@@ -61,7 +61,7 @@ header {
 #nav-bar {
   height: 60px;
   margin: 20px 0px 0px 0px;
-  -webkit-backdrop-filter: var(--background-blur);
+  -webkit-backdrop-filter: var(--background-blur); /* Allows blur property to work in Safari/webkit */
   backdrop-filter: var(--background-blur);
   padding: 0px 40px 0px 30px;
 }
@@ -76,11 +76,11 @@ header {
 }
 
 
-/* Link selectors */
+/* Link CSS */
 
 a {
   text-decoration: none;
-  color: white;
+  color: var(--white);
 }
 
 a:hover {
@@ -91,7 +91,7 @@ a:hover {
 /* About Me Section CSS */
 
 #about-me .side-accent {
-/* Removes overlap so accent sits flush with adjacent element */
+/* Removes overlap so side accent sits flush with adjacent element */
   margin-bottom: 17px;
 }
 
@@ -105,13 +105,6 @@ figure {
   clip-path: circle(70px at center);
 }
 
-.side-accent {
-  width: 2px;
-  background-color: white;
-  margin-left: 10px;
-  margin-right: 20px;
-}
-
 #sub-heading {
   margin-right: 70px;
   margin-top: 10px;
@@ -119,7 +112,7 @@ figure {
 
 #sub-heading h2 {
   padding: 0px 10px 0px 0px;
-  border-right: solid white 4px;
+  border-right: solid var(--white) 4px;
   font-size: 25px;
 }
 
@@ -145,6 +138,31 @@ figure {
   justify-content: end;
 }
 
+#project1 {
+  grid-area: project1;
+  background-image: url("../images/code-refactor.jpg");
+}
+
+#project2 {
+  grid-area: project2;
+  background-image: url("../images/Pre-work-study-guide.png");
+}
+
+#project3 {
+  grid-area: project3;
+  background-image: url("../images/student-bio-page.png");
+}
+
+#project4 {
+  grid-area: project4;
+  background-image: url("../images/02-portfolio-1.jpg");
+}
+
+#project5 {
+  grid-area: project5;
+  background-image: url("../images/02-portfolio-2.jpg");
+}
+
 .workGridArea {
   display: grid;
   margin-right: 20px;
@@ -159,32 +177,7 @@ figure {
 
 .workGridArea a:hover {
   background: var(--transparent-black);
-  color: white;
-}
-
-.project1 {
-  grid-area: project1;
-  background-image: url("../images/code-refactor.jpg");
-}
-
-.project2 {
-  grid-area: project2;
-  background-image: url("../images/Pre-work-study-guide.png");
-}
-
-.project3 {
-  grid-area: project3;
-  background-image: url("../images/student-bio-page.png");
-}
-
-.project4 {
-  grid-area: project4;
-  background-image: url("../images/02-portfolio-1.jpg");
-}
-
-.project5 {
-  grid-area: project5;
-  background-image: url("../images/02-portfolio-2.jpg");
+  color: var(--white);
 }
 
 .project-heading {
@@ -204,7 +197,7 @@ figure {
 }
 
 
-/* Contact Me Section CSS */
+/* Contact Me CSS */
 
 #contact-me a {
   font-size: 15px;
@@ -214,21 +207,6 @@ figure {
   padding-left: 20px;
   margin-right: 95px;
   font-size: 15px;
-}
-
-
-/* Class selectors */
-
-.background {
-/* Universal properties for all background elements */
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-}
-
-.section-margin {
-/* Left spacing for each section */
-  margin-left: 30px;
 }
 
 
@@ -261,6 +239,28 @@ figure {
 }
 
 
+/* Class selectors */
+
+.background {
+  /* Universal properties for all background elements */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+  }
+  
+.side-accent {
+  width: 2px;
+  background-color: var(--white);
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.section-margin {
+/* Left spacing for each section */
+  margin-left: 30px;
+}
+
+
 /* Typography CSS */
 
 h2 {
@@ -282,7 +282,6 @@ li {
 }
 
 /* Typography Class Selectors */
-
 .light {
   font-weight: lighter;
 }
@@ -292,21 +291,24 @@ li {
 }
 
 
-/* Media Queries and related classes */
+/* Media Queries and relevant classes */
 
 .sub-heading-mobile {
+/* Sub-heading for displays below 780px width */
   margin: 0px;
   padding-left: 10px;
   font-weight: lighter;
 }
 
 @media only screen and (min-width: 780px) {
+/* Don't display sub-heading-mobile above 780px width */
   .sub-heading-mobile {
     display: none;
   }
 }
 
 @media only screen and (max-width: 600px) {
+/* Resize work grid */
   #work {
     display: grid;
     margin-right: 70px;
@@ -324,6 +326,7 @@ li {
 }
 
 @media only screen and (max-width: 780px) {
+/* Center elements on nav-bar below 780px width */
   #nav-bar {
     justify-content: center;
     align-items: center;
@@ -331,6 +334,7 @@ li {
     width: 100%;
   }
   #contact-me ul {
+  /* List contact links in a column */
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
@@ -338,15 +342,19 @@ li {
     padding-left: 0;
   }
   #contact-me li {
+  /* Position contact links */
     padding-bottom: 20px;
   }
   #nav {
+  /* Remove nav elements   */
     display: none;
   }
   #sub-heading {
+  /* Remove main sub-heading   */
     display: none;
   }
   #about-me {
+  /* Add right margin */
     margin-right: 30px;
   }
 }
