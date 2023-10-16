@@ -22,7 +22,7 @@ To see the code, open the DevTools by pressing Command+Option+I (macOS) or Contr
 
 ## Screenshot
 
-![The portfolio includes a navigation bar, a bio, and work with titles and images as well as a contact section at the bottom of the page.](assets/images/screenshot.png)
+![The portfolio includes a navigation bar, a bio, and work with titles and images as well as a contact section at the bottom of the page.](assets/images/Screenshot.png)
 
 ## Credits
 
