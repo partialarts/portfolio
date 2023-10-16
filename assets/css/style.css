@@ -157,26 +157,26 @@ figure {
   margin-right: 0px;
 }
 
-#project2 {
+.project2 {
   grid-area: project2;
   background-image: url("../images/Pre-work-study-guide.png");
   margin-left: 0px;
 }
 
-#project3 {
+.project3 {
   grid-area: project3;
   background-image: url("../images/student-bio-page.png");
   margin-right: 0px;
 }
 
-#project4 {
+.project4 {
   grid-area: project4;
   background-image: url("../images/02-portfolio-1.jpg");
   margin-bottom: 0px;
   margin-left: 0px;
 }
 
-#project5 {
+.project5 {
   grid-area: project5;
   background-image: url("../images/02-portfolio-2.jpg");
   margin-bottom: 0px;
