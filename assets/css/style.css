@@ -10,7 +10,6 @@
 :root {
   --background-blur: blur(16px);
   --light-grey: rgb(200, 170, 150);
-  /* --light-grey: #b5b5b5; */
   --transparent-white: rgba(255,255,255,0.05);
   --transparent-black: rgba(0,0,0,0.5);
 }
@@ -62,6 +61,7 @@ header {
 #nav-bar {
   height: 60px;
   margin: 20px 0px 0px 0px;
+  -webkit-backdrop-filter: var(--background-blur);
   backdrop-filter: var(--background-blur);
   padding: 0px 40px 0px 30px;
 }
