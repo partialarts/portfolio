@@ -11,11 +11,13 @@
 
 <body class="page-background background">
 <div>
-  <!-- main logo / nav -->
+<!-- main logo / nav -->
   <header>
-    <nav id="nav-bar" class="flex-row">
+    <nav id="nav-bar" class="flex-row align-center">
             <h1>JEM<span class="light">LAWTON</span></h1>
-            <ul class="flex-row justify-end width-100">
+            <!-- This sub-heading only visible on displays < 780px width -->
+            <h2 class="sub-heading-mobile">| Portfolio</h2>
+            <ul id="nav" class="flex-row justify-end width-100">
                 <li><a href="#about-me">ABOUT ME</a></li>
                 <li><a href="#work">WORK</a></li>
                 <li><a href="#contact-me">CONTACT ME</a></li>
@@ -23,9 +25,11 @@
             </ul>
     </nav>
   </header>
+
+<!-- Start of main content -->
 <main class="main-wrapper">
 
-  <!-- about me -->
+<!-- about me -->
 <div class="content-wrapper">
   <section class="flex-row">
     <article id="about-me" class="flex-row section-margin">
@@ -41,13 +45,15 @@
           <p>Chillwave ascot man bun pok pok yes plz live-edge hot chicken vinyl blackbird spyplane occupy woke farm-to-table vape umami health goth. Banh mi blackbird spyplane thundercats twee taxidermy lumbersexual. Tonx gochujang fanny pack street art, +1 franzen you probably haven't heard of them poutine food truck yuccie knausgaard Brooklyn skateboard adaptogen. Butcher dreamcatcher sus blackbird spyplane.</p>
       </div>
     </article>
+
+  <!-- this sub-heading only visible on displays > 780px width -->
       <div id="sub-heading" class="flex-column">
          <h2>Portfolio</h2>
        </div>
   </section>
 </div>
  
-<!-- portfolio container -->
+<!-- work section -->
 <div class="content-wrapper">
 
   <section id="work" class="section-margin">
@@ -56,11 +62,11 @@
         <h2>WORK</h2>
         <div class="side-accent"></div>
     </div>
-    <div id="project1" class="workGridArea background">
-    <div class="project-heading">
+    <!-- <div id="project1" class="workGridArea background"> -->
+<a href="https://partialarts.github.io/week1-refactor-challenge/" class="project1 workGridArea background" target="_blank"></a>
+        <div class="project-heading">
         <h3>Accessibility Refactor Challenge</h3>
         <h4 class="light">HTML / CSS Refactor</h4>
-    </div>
     </div>
     <div id="project2" class="workGridArea background">
     <div class="project-heading">
